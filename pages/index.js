@@ -25,11 +25,13 @@ export default function Home({ allPostsData }) {
         <p>[Clarian likes to talk about programming a bunch and bla...]</p>
         <p>
           (This is just a template sample - you can modify and customize this to
-          your heart's content)
+          your heart's content.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}
+        style={{color:'green'}}
+        >Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
